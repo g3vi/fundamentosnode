@@ -103,6 +103,7 @@ app.post('/login', (req, res) => {
         })
 })
 
+// Agregados en la clase del 1 de febrero, terminado estops archivos.
 app.get('/get-all', async (req, res) => {
     const usuarios = collection(db, 'usuarios')
     const docsUsuarios = await getDocs(usuarios)
